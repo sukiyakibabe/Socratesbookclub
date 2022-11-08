@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <title>Bookshelf</title>
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+    <style>
+        
+        body {
+            margin: 0px;  
+            background-color: #000000;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #ffffff;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 50px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 30px;
+            text-decoration: none;
+            font-size: 16px;
+            color: #000000;
+            display: block;
+            transition: 0.3s;
+            font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+            font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+        }
+
+        .sidenav a:hover {
+            color: #00D1FF;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: auto;
+            font-size: 30px;
+            margin-right: 50px;
+            margin-top: 10px;    
+        }
+        
+        span {
+            position: fixed;
+            top: 0;
+            left: 0;
+            margin-left: 30px;
+            margin-top: 20px; 
+        }
+        
+    
+/*
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+*/
+        }
+
+    </style>
+</head>
+<body>
+      <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href=""></a>
+          <a href=""></a>
+          <a href=""></a>
+          <a href=""></a>
+          <a href="index.html">메인화면으로</a>
+          <a href=""></a>
+          <a href="guide.html">사용설명서</a>
+          <a href=""></a>
+          <a href="bookshelf.html">차원의 책꽂이</a>
+          <a href=""></a>
+          <a href="ruler.html">3.5차원 책꽂이</a>
+          <a href=""></a>
+      </div>
+
+        <span style="font-size:30px;cursor:pointer;color:white;" onclick="openNav()">&#9776;</span>
+
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+      </script>
+</body>
+</html>
