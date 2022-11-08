@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <title>Socrates Bookclub</title>
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+    <style>
+		#wrap{
+    width:100%;
+    margin:0px ;
+ }
+		
+/*
+        img {
+            max-width: 100%;
+            height: auto;   
+        }
+        
+*/
+		body {
+			margin: 0;
+			width: 100%;
+		}
+		
+        header {
+			width: 100%;
+			height: 700px;
+            margin-top: 0px; 
+            background-color: #000000;
+			display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+}
+	
+
+.book {
+  transform-style: preserve-3d;
+  position: relative;
+  height: 300px;
+  cursor: pointer;
+  backface-visibility: visible;
+}
+
+.front,
+.back,
+.page1,
+.page2,
+.page3,
+.page4,
+.page5,
+.page6 {
+  transform-style: preserve-3d;
+  position: absolute;
+  width: 200px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform-origin: left center;
+  transition: transform 0.5s ease-in-out, box-shadow 0.35s ease-in-out;
+}
+
+.front,
+.back {
+  background: #00D1FF;
+	
+}
+
+.front,
+.page1,
+.page3,
+.page5 {
+  border-bottom-right-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+
+.back,
+.page2,
+.page4,
+.page6 {
+  border-bottom-right-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+
+.page1 {
+  background: #efefef;
+}
+
+.page2 {
+  background: #efefef;
+}
+
+.page3 {
+  background: #f5f5f5;
+}
+
+.page4 {
+  background: #f5f5f5;
+}
+
+.page5 {
+  background: #fafafa;
+}
+
+.page6 {
+  background: #fdfdfd;
+}
+
+.book:hover .front {
+  transform: rotateY(-160deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+}
+
+.book:hover .page1 {
+  transform: rotateY(-150deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+}
+
+.book:hover .page2 {
+  transform: rotateY(-30deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+}
+
+.book:hover .page3 {
+  transform: rotateY(-140deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+}
+
+.book:hover .page4 {
+  transform: rotateY(-40deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+}
+
+.book:hover .page5 {
+  transform: rotateY(-130deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+}
+
+.book:hover .page6 {
+  transform: rotateY(-50deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+}
+
+.book:hover .back {
+  transform: rotateY(-20deg) scale(1.1);
+}
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #ffffff;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 50px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 30px;
+            text-decoration: none;
+            font-size: 16px;
+            color: #000000;
+            display: block;
+            transition: 0.3s;
+            font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+            font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+        }
+
+        .sidenav a:hover {
+            color: #00D1FF;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: auto;
+            font-size: 30px;
+            margin-right: 50px;
+            margin-top: 10px;    
+        }
+        
+        span {
+            position: fixed;
+            top: 0;
+            left: 0;
+            margin-left: 30px;
+            margin-top: 20px; 
+        }
+       
+    
+/*
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+*/
+        }
+
+    </style>
+</head>
+<body>
+	<div id="wrap">
+		<header>
+<!--      <img src="./img/index.jpg" alt="">-->
+	<rect></rect>
+      <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href=""></a>
+          <a href=""></a>
+          <a href=""></a>
+          <a href=""></a>
+          <a href="index.html">메인화면으로</a>
+          <a href=""></a>
+          <a href="guide.html">사용설명서</a>
+          <a href=""></a>
+          <a href="bookshelf.html">차원의 책꽂이</a>
+          <a href=""></a>
+          <a href="ruler.html">3.5차원 책꽂이</a>
+          <a href=""></a>
+      </div>
+	<div class="book">
+  <div class="back"></div>
+  <div class="page6">
+		<img src="./img/bookpage2.jpg" alt="">
+		</div>
+  <div class="page5">
+	    <img src="./img/bookpage3.jpg" alt=""></div>
+  <div class="page4">
+		<img src="./img/bookpage5.jpg" alt=""></div>
+  <div class="page3">
+		<img src="./img/bookpage6.jpg" alt=""></div>
+  <div class="page2"><img src="./img/bookpage7.jpg" alt=""></div>
+  <div class="page1">
+		<img src="./img/bookpage8.jpg" alt="">
+		</div>
+  <div class="front"></div>
+</div>
+</header>		
+	</div>
+        <span style="font-size:30px;cursor:pointer;color:white;" onclick="openNav()">&#9776;</span>
+
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+      </script>
+</body>
+</html>

@@ -1,16 +1,135 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--    <meta name="viewport" content="width: 1440px, height: 1024px, user-scalable=yes">-->
     <title>Bookshelf</title>
     <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
     <style>
-        
-        body {
-            margin: 0px;  
-            background-color: #000000;
+        img {
+            width: 1440px;   
+			text-align: center;
         }
+        body {  
+            background-color: #000000;
+			height: 1024px;
+			width: 1440px;
+	margin: 0;
+        }
+		
+		book1{
+	
+			color:#000000;
+			background: #ffffff;
+			border: 1px solid #00D1FF;
+			font-size: 16px;
+			transition:0.3s;
+			position: absolute;
+			width: 62px;
+			height: 813px;
+			left: 125px;
+			top: 211px;		
 
+		}
+		book1:focus {
+			outline:0;
+		}
+		book1:hover{
+			background: #00D1FF;
+			cursor: pointer;
+			box-shadow: #dddddd;
+		}
+
+		book2{
+	
+			color:#000000;
+			background: #ffffff;
+			border: 1px solid #00D1FF;
+			font-size: 16px;
+			transition:0.3s;
+			position: absolute;
+			width: 54px;
+			height: 575px;
+			left: 188px;
+			top: 449px;
+			
+		}
+		book2:focus {
+			outline:0;
+		}
+		book2:hover{
+			background: #00D1FF;
+			cursor: pointer;
+			box-shadow: #dddddd;
+		}
+		
+		book3{
+	
+			color:#000000;
+			background: #ffffff;
+			border: 1px solid #00D1FF;
+			font-size: 16px;
+			transition:0.3s;
+			position: absolute;
+			width: 62px;
+			height: 515px;
+			left: 243px;
+			top: 509px;
+			
+		}
+		book3:focus {
+			outline:0;
+		}
+		book3:hover{
+			background: #00D1FF;
+			cursor: pointer;
+			box-shadow: #dddddd;
+		}
+				book4{
+	
+			color:#000000;
+			background: #ffffff;
+					border: 1px solid #00D1FF;
+			font-size: 16px;
+			transition:0.3s;
+			position: absolute;
+			width: 103px;
+			height: 703px;
+			left: 306px;
+			top: 321px;
+
+		}
+		book4:focus {
+			outline:0;
+		}
+		book4:hover{
+			background: #00D1FF;
+			cursor: pointer;
+			box-shadow: #dddddd;
+		}
+		
+				book5{
+	
+			color:#000000;
+			background: #ffffff;
+					border: 1px solid #00D1FF;
+			font-size: 16px;
+			transition:0.3s;
+			position: absolute;
+			width: 65px;
+			height: 405px;
+			left: 410px;
+			top: 619px;
+		}
+		book5:focus {
+			outline:0;
+		}
+		book5:hover{
+			background: #00D1FF;
+			cursor: pointer;
+			box-shadow: #dddddd;
+		}
+
+		
         .sidenav {
             height: 100%;
             width: 0;
@@ -67,6 +186,14 @@
     </style>
 </head>
 <body>
+	 <img src="./img/grid.jpg" alt="">
+	<book1>01 연구의 필요성</book1>
+	<book2>02 연구의 목적</book2>
+	<book3>03 책꽂이의 역사</book3>
+	<book4>04 가설: 책꽂이 상상하기</book4>
+	<book5>05 참고문헌 및 도움 주신 분들</book5>
+	
+	
       <div id="mySidenav" class="sidenav">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <a href=""></a>
@@ -82,6 +209,7 @@
           <a href="ruler.html">3.5차원 책꽂이</a>
           <a href=""></a>
       </div>
+	
 
         <span style="font-size:30px;cursor:pointer;color:white;" onclick="openNav()">&#9776;</span>
 
