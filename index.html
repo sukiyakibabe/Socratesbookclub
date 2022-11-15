@@ -1,66 +1,166 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--    <meta name="viewport" content="width: 1440px, height: 1024px, user-scalable=yes">-->
     <title>Socrates Bookclub</title>
     <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
     <style>
         img {
-            max-width: 100%;
-            height: auto;   
+            width: 1440px;   
+			text-align: center;
         }
-        
-        body {
-            margin: 0px;  
+        body {  
             background-color: #000000;
+			height: 1024px;
+			width: 1440px;
+			margin: 0;
         }
+		
+		
+		book2{
+	
+			color:#00D1FF;
+			font-size: 15px;
+			transition:0.3s;
+			position: absolute;
+			width: 62px;
+			height: 110px;
+			left: 130px;
+			top: 220px;
+			
+		}
+		
+		book3{
+	
+			color:#00D1FF;
+			font-size: 15px;
+			transition:0.3s;
+			position: absolute;
+			width: 102px;
+			height: 87px;
+			left: 197px;
+			top: 331px;
 
-        .sidenav {
-            height: 100%;
-            width: 0;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: #ffffff;
-            overflow-x: hidden;
-            transition: 0.5s;
-            padding-top: 50px;
-        }
+		}
+		
+		book4{
+	
+			color:#00D1FF;
+			font-size: 15px;
+			transition:0.3s;
+			position: absolute;
+			width: 12px;
+			height: 41px;
+			left: 289px;
+			top: 408px;
 
-        .sidenav a {
-            padding: 8px 8px 8px 30px;
-            text-decoration: none;
-            font-size: 16px;
-            color: #000000;
-            display: block;
-            transition: 0.3s;
-            font-family: 'Spoqa Han Sans Neo', 'sans-serif';
-            font-family: 'Spoqa Han Sans Neo', 'sans-serif';
-        }
+		}
+		
+		
+		book5{
+	
+			color:#00D1FF;
+			font-size: 15px;
+			transition:0.3s;
+			position: absolute;
+			width: 56px;
+			height: 60px;
+			left: 309px;
+			top: 459px;
+		}
+		
+		book6{
+	
+			color:#000000;
+			font-size: 15px;
+			transition:0.3s;
+			position: absolute;
+			width: 64px;
+			height: 109px;
+			left: 365px;
+			top: 515px;
+		} 
+		
+		book6:hover {
+	
+			color:#00D1FF;
+			font-size: 15px;
+			transition:0.3s;
+			position: absolute;
+			width: 64px;
+			height: 109px;
+			left: 365px;
+			top: 515px;
+		}
 
-        .sidenav a:hover {
-            color: #00D1FF;
-        }
+		p1{
+			color:#ffffff;
+			font-size: 15px;
+			position: absolute;
+			left: 160px;
+			top: 30px;
+		}
+		
+		p2{
+			color:#ffffff;
+			font-size: 15px;
+			position: absolute;
+			left: 750px;
+			top: 30px;
+		}
+		
+		p3{
+			color:#00D1FF;
+			font-size: 14px;
+			position: absolute;
+			width: 297px;
+			height: 406px;
+			left: 440px;
+			top: 640px;
+			line-height: 150%;
+			white-space:normal;
+			
+		}
+		
+		p3:hover{
+			color:#ffffff;
+			position: absolute;
+			transition: 0.5s;
+		}
 
-        .sidenav .closebtn {
-            position: absolute;
-            top: 0;
-            right: auto;
-            font-size: 30px;
-            margin-right: 50px;
-            margin-top: 10px;    
-        }
-        
-        span {
-            position: fixed;
-            top: 0;
-            left: 0;
-            margin-left: 30px;
-            margin-top: 20px; 
-        }
-        
+        p4{
+			color:#ffffff;
+			font-size: 15px;
+			position: absolute;
+			left: 160px;
+			top: 1870px;
+		}
+		
+		a:link{text-decoration: none;}
+		a:visited {color:black; text-decoration: none;}
+		a:hover {color:#00D1FF; text-decoration: none;}
+
+/*
+   		.shelf1 {
+			position: absolute;
+			width: 533px;
+			height: 110px;
+			left: 720px;
+			top: 211px;
+			filter: brightness(10%);
+			object-fit: contain;
+		}
+
     
+		.shelf2 {
+			position: absolute;
+			width: 102px;
+			height: 616px;
+			left: 1151px;
+			top: 408px;
+			object-fit: contain;
+		}
+*/
 /*
         @media screen and (max-height: 450px) {
             .sidenav {padding-top: 15px;}
@@ -71,32 +171,30 @@
     </style>
 </head>
 <body>
-      <img src="./img/index.jpg" alt="">
-      <div id="mySidenav" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <a href=""></a>
-          <a href=""></a>
-          <a href=""></a>
-          <a href=""></a>
-          <a href="index.html">메인화면으로</a>
-          <a href=""></a>
-          <a href="guide.html">사용설명서</a>
-          <a href=""></a>
-          <a href="bookshelf.html">차원의 책꽂이</a>
-          <a href=""></a>
-          <a href="ruler.html">3.5차원 책꽂이</a>
-          <a href=""></a>
-      </div>
+	 <img src="./img/index2.jpg" alt="">
+	<book1></book1>
+	<book2><a href="index.html">처음으로</a></book2>
+	<book3><a href="guide.html">설명서</a></book3>
+	<book4></book4>
+	<book5><a href="bookshelf.html">차원의ㅤ책꽂이</a></book5>
+	<book6>?</book6>
+	
+	<p1>소크라테스 북클럽</p1>
+	<p2><a href="isthis.html">Q: 이것은 책꽂이인가?</a></p2>
+	<p3>이곳은 <차원, 신전, 책꽂이>이다.ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ차원의 교집합을 찾아보자! ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ당신이 원하는 곳으로 이동할 수 있다.</p3>
+	<p4>소크라테스 북클럽: 김규민, 박세미, 허수빈</p4>
+	
+	
+<!--
+	<div class="shelf1">
+		<img src="./img/shelf1.png">
+		</div>
+		<div class="shelf2">
+		<img src="./img/shelf2.png">
+		</div>
+-->
 
-        <span style="font-size:30px;cursor:pointer;color:white;" onclick="openNav()">&#9776;</span>
-
-      <script>
-        function openNav() {
-          document.getElementById("mySidenav").style.width = "250px";
-        }
-        function closeNav() {
-          document.getElementById("mySidenav").style.width = "0";
-        }
+  
       </script>
 </body>
 </html>

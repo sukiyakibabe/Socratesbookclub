@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+ 
+<head>
+  <link rel="stylesheet" href="reset.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+	 width: 100%;
+    }
+	  
+	  p1{
+			color:#ffffff;
+			font-size: 15px;
+			position: absolute;
+			left: 160px;
+			top: 30px;
+		}
+		
+		p2{
+			color:#ffffff;
+			font-size: 15px;
+			position: absolute;
+			left: 750px;
+			top: 30px;
+		}
+    .scene {
+      height: 100vh;
+      overflow: hidden;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    .scene.one{
+      background-image: url(img/home1.jpg);
+    }
+    .scene.two{
+      background-image: url(img/home2.jpg);
+    }
+    .scene.three{
+      background-image: url(img/home3.jpg);
+    }
+	.scene.four{
+      background-image: url(img/home4.jpg);
+    }  
+    .scene header{
+      color:white;
+      max-width: 80%;
+      position: relative;
+      left:50%;
+      top:50%;
+      transform:translateX(-50%) translateY(-50%);
+      font-size:1.5rem;
+      text-align: center;
+	
+    }
+    .scene header h1{
+      font-size:2rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+    .scene header h1:after{
+      content:'';
+      width:8rem;
+      display: block;
+      margin:0 auto;
+      margin-top:1rem;
+    }
+	  
+	  .a {
+		 
+	  }
+  </style>
+</head>
+ 
+<body>
+	
+	<a href="index.html">차원으로/신전으로/책꽂이로</a>
+	<p1>소크라테스 북클럽</p1>
+	<p2>Q: 이것은 책꽂이인가?</p2>
+	
+	
+  <section class="scene one">
+    <header>
+      <h1>신전으로</h1> 
+    </header>
+  </section>
+  <section class="scene two">
+    <header>
+      <h1>차원으로</h1> 
+    </header>
+  </section>
+  <section class="scene three">
+    <header>
+      <h1>책꽂이로</h1> 
+    </header>
+  </section>
+	<section class="scene four">
+    <header>
+      <h1>이것은 책꽂이인가?</h1> 
+    </header>
+  </section>
+	
+	
+   
+</body>
+ 
+</html>

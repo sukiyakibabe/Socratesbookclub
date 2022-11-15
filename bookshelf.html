@@ -21,13 +21,14 @@
 			color:#000000;
 			background: #ffffff;
 			border: 1px solid #00D1FF;
-			font-size: 16px;
+			font-size: 21px;
 			transition:0.3s;
 			position: absolute;
 			width: 62px;
 			height: 813px;
 			left: 125px;
-			top: 211px;		
+			top: 211px;
+	
 
 		}
 		book1:focus {
@@ -44,7 +45,7 @@
 			color:#000000;
 			background: #ffffff;
 			border: 1px solid #00D1FF;
-			font-size: 16px;
+			font-size: 19px;
 			transition:0.3s;
 			position: absolute;
 			width: 54px;
@@ -67,7 +68,7 @@
 			color:#000000;
 			background: #ffffff;
 			border: 1px solid #00D1FF;
-			font-size: 16px;
+			font-size: 24px;
 			transition:0.3s;
 			position: absolute;
 			width: 62px;
@@ -89,7 +90,7 @@
 			color:#000000;
 			background: #ffffff;
 			border: 1px solid #00D1FF;
-			font-size: 16px;
+			font-size: 25px;
 			transition:0.3s;
 			position: absolute;
 			width: 103px;
@@ -129,53 +130,24 @@
 			box-shadow: #dddddd;
 		}
 
+		main {
+
+			background-color: white;
+			border: 1px #00D1FF;
+			font-size: 15px;
+			transition:0.3s;
+			position: absolute;
+			width: 125px;
+			height: 211px;
+			left: 0px;
+			top: 0px;
+		}
 		
-        .sidenav {
-            height: 100%;
-            width: 0;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: #ffffff;
-            overflow-x: hidden;
-            transition: 0.5s;
-            padding-top: 50px;
-        }
+		
+   		a:link{text-decoration: none;}
+		a:visited {color:black; text-decoration: none;}
+		a:hover {color:#00D1FF; text-decoration: none;}
 
-        .sidenav a {
-            padding: 8px 8px 8px 30px;
-            text-decoration: none;
-            font-size: 16px;
-            color: #000000;
-            display: block;
-            transition: 0.3s;
-            font-family: 'Spoqa Han Sans Neo', 'sans-serif';
-            font-family: 'Spoqa Han Sans Neo', 'sans-serif';
-        }
-
-        .sidenav a:hover {
-            color: #00D1FF;
-        }
-
-        .sidenav .closebtn {
-            position: absolute;
-            top: 0;
-            right: auto;
-            font-size: 30px;
-            margin-right: 50px;
-            margin-top: 10px;    
-        }
-        
-        span {
-            position: fixed;
-            top: 0;
-            left: 0;
-            margin-left: 30px;
-            margin-top: 20px; 
-        }
-        
-    
 /*
         @media screen and (max-height: 450px) {
             .sidenav {padding-top: 15px;}
@@ -186,33 +158,17 @@
     </style>
 </head>
 <body>
+	<main><a href="index.html">처음으로</a></main>
+	
 	 <img src="./img/grid.jpg" alt="">
-	<book1>01 연구의 필요성</book1>
-	<book2>02 연구의 목적</book2>
-	<book3>03 책꽂이의 역사</book3>
-	<book4>04 가설: 책꽂이 상상하기</book4>
-	<book5>05 참고문헌 및 도움 주신 분들</book5>
+	<book1><a href="book1.html">이것은 책꽂이인가?</a></book1>
+	<book2><a href="book2.html">질문에 대답하기</a></book2>
+	<book3><a href="book3.html">책이 사는 세계</a></book3>
+	<book4><a href="book4.html">3.5차원의 책꽂이 상상하기</a></book4>
+	<book5><a href="book5.html">참고문헌 및 도움 주신 분들</a></book5>
 	
 	
-      <div id="mySidenav" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <a href=""></a>
-          <a href=""></a>
-          <a href=""></a>
-          <a href=""></a>
-          <a href="index.html">메인화면으로</a>
-          <a href=""></a>
-          <a href="guide.html">사용설명서</a>
-          <a href=""></a>
-          <a href="bookshelf.html">차원의 책꽂이</a>
-          <a href=""></a>
-          <a href="ruler.html">3.5차원 책꽂이</a>
-          <a href=""></a>
-      </div>
-	
-
-        <span style="font-size:30px;cursor:pointer;color:white;" onclick="openNav()">&#9776;</span>
-
+   
       <script>
         function openNav() {
           document.getElementById("mySidenav").style.width = "250px";

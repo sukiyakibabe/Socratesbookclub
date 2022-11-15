@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" 
+          content="width=device-width, height=device-height, 
+                     minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0">
+    <title>book</title>
+    <style>
+		body{
+			margin: 0px;
+		}	
+		
+    div {
+        width: 1440px;
+        height: 1024px;
+
+    }
+    div.left {
+        width: 50%;
+        float: left;
+        box-sizing: border-box;
+        background: #000000;
+    }
+		
+		div.left img {
+			width: 1440px;
+		}
+		
+		
+	book1{
+	
+			color:#000000;
+			background: #ffffff;
+			border: 1px solid #00D1FF;
+			font-size: 21px;
+			transition:0.3s;
+			position: absolute;
+			width: 62px;
+			height: 813px;
+			left: 125px;
+			top: 211px;
+	
+
+		}
+		book1:focus {
+			outline:0;
+		}
+		book1:hover{
+			background: #00D1FF;
+			cursor: pointer;
+			box-shadow: #dddddd;
+		}
+
+		main {
+
+			background-color: white;
+			border: 1px #00D1FF;
+			font-size: 15px;
+			transition:0.3s;
+			position: absolute;
+			width: 125px;
+			height: 211px;
+			left: 0px;
+			top: 0px;
+		}	
+    div.right {
+        width: 720px;
+        float: right;
+        box-sizing: border-box;
+		background-color: white;
+
+    }
+		
+		.scene.one img{
+		width: 720px;
+    }
+		
+		
+		a:link{text-decoration: none;}
+		a:visited {color:black; text-decoration: none;}
+		a:hover {color:#00D1FF; text-decoration: none;}
+		
+		
+    </style>
+</head>
+ 
+<body>
+    <div>
+		
+		
+<!--	왼쪽 화면-->
+		
+		
+        <div class="left">
+			<main><a href="bookshelf.html">책꽂이로</a></main>
+	
+	 		<img src="./img/grid.jpg" alt="">
+			<book1><a href="book1.html">이것은 책꽂이인가?</a></book1>
+		
+		
+		</div>
+		
+<!--	오른쪽 화면-->
+		
+		
+        <div class="right">
+		<section class="scene one">	
+			<img src="./img/b1_2.jpg" alt="">
+			</section>
+		
+		</div>
+    </div>
+</body>
+</html>
